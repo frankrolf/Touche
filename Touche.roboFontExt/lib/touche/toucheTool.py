@@ -159,6 +159,7 @@ class ToucheTool():
             for b in outputButtons:
                 b.enable(False) if len(self.touchingPairs) == 0 else b.enable(True)
             self.w.preview.setFont(f)
+            self.w.preview.setApplyKerning(True)
             self.w.options.progress.stop()
             self._resizeWindow(enlarge=True)
 
